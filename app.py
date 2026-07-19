@@ -111,10 +111,9 @@ st.markdown(
             border-radius:10px !important;
             padding: 2rem !important;
             min-height:320px;
-            display:flex !important;
-            flex-direction:column !important;
-            align-items:center !important;
-            justify-content:center !important;
+            display:grid !important;
+            align-content:center !important;
+            justify-items:center !important;
             gap: 1.5rem !important;
             transition:border-color 0.25s, background 0.25s;
             cursor:pointer;
@@ -123,6 +122,8 @@ st.markdown(
             position: static !important;
             margin: 0 !important;
             transform: none !important;
+            height: auto !important;
+            flex: none !important;
         }
         [data-testid="stFileUploader"] section:hover {
             border-color:var(--leaf) !important;
