@@ -109,7 +109,7 @@ st.markdown(
             background:var(--card) !important;
             border:2px dashed var(--umber-line) !important;
             border-radius:10px !important;
-            padding: 1.5rem !important;
+            padding: 2rem !important;
             min-height:320px;
             display:flex !important;
             flex-direction:column !important;
@@ -118,6 +118,11 @@ st.markdown(
             gap: 1.5rem !important;
             transition:border-color 0.25s, background 0.25s;
             cursor:pointer;
+        }
+        [data-testid="stFileUploader"] section > * {
+            position: static !important;
+            margin: 0 !important;
+            transform: none !important;
         }
         [data-testid="stFileUploader"] section:hover {
             border-color:var(--leaf) !important;
@@ -128,6 +133,7 @@ st.markdown(
             align-items:center; justify-content:center;
             gap:0.4rem; padding:0 !important; margin:0 !important;
             text-align:center; width:100%;
+            position: static !important;
         }
         [data-testid="stFileUploaderDropzoneInstructions"] svg {
             width:40px !important; height:40px !important;
@@ -146,13 +152,13 @@ st.markdown(
             border:none !important; border-radius:5px !important;
             font-family:'JetBrains Mono',monospace !important;
             font-size:0.72rem !important; letter-spacing:0.06em !important;
-            padding:0.45rem 1.2rem !important; 
+            padding:0.5rem 1.2rem !important; 
             margin: 0 !important;
             cursor:pointer !important;
-            position: relative !important;
+            position: static !important;
             transform: none !important;
-            top: auto !important; left: auto !important; right: auto !important; bottom: auto !important;
             order: -1 !important;
+            width: auto !important;
         }
         [data-testid="stFileUploader"] button:hover { opacity:0.85 !important; }
 
