@@ -146,6 +146,9 @@ st.markdown(
             font-size:0.72rem !important; letter-spacing:0.06em !important;
             padding:0.45rem 1.2rem !important; margin-top:0.6rem !important;
             cursor:pointer !important;
+            position: static !important;
+            order: 2 !important;
+            margin: 0.6rem auto 0 auto !important;
         }
         [data-testid="stFileUploader"] section button:hover { opacity:0.85 !important; }
 
