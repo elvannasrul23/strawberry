@@ -109,12 +109,13 @@ st.markdown(
             background:var(--card) !important;
             border:2px dashed var(--umber-line) !important;
             border-radius:10px !important;
-            padding:0 !important;
+            padding: 1.5rem !important;
             min-height:320px;
             display:flex !important;
             flex-direction:column !important;
             align-items:center !important;
             justify-content:center !important;
+            gap: 1.5rem !important;
             transition:border-color 0.25s, background 0.25s;
             cursor:pointer;
         }
@@ -125,7 +126,8 @@ st.markdown(
         [data-testid="stFileUploader"] section > div {
             display:flex; flex-direction:column;
             align-items:center; justify-content:center;
-            gap:0.4rem; padding:2.5rem 2rem; text-align:center; width:100%;
+            gap:0.4rem; padding:0 !important; margin:0 !important;
+            text-align:center; width:100%;
         }
         [data-testid="stFileUploaderDropzoneInstructions"] svg {
             width:40px !important; height:40px !important;
@@ -139,18 +141,20 @@ st.markdown(
             font-family:'JetBrains Mono',monospace !important;
             font-size:0.68rem !important; color:var(--umber) !important;
         }
-        [data-testid="stFileUploader"] section button {
+        [data-testid="stFileUploader"] button {
             background:var(--ink) !important; color:var(--fog) !important;
             border:none !important; border-radius:5px !important;
             font-family:'JetBrains Mono',monospace !important;
             font-size:0.72rem !important; letter-spacing:0.06em !important;
-            padding:0.45rem 1.2rem !important; margin-top:0.6rem !important;
+            padding:0.45rem 1.2rem !important; 
+            margin: 0 !important;
             cursor:pointer !important;
-            position: static !important;
-            order: 2 !important;
-            margin: 0.6rem auto 0 auto !important;
+            position: relative !important;
+            transform: none !important;
+            top: auto !important; left: auto !important; right: auto !important; bottom: auto !important;
+            order: -1 !important;
         }
-        [data-testid="stFileUploader"] section button:hover { opacity:0.85 !important; }
+        [data-testid="stFileUploader"] button:hover { opacity:0.85 !important; }
 
         /* ── Preview frame ── */
         .sp-img-frame {
